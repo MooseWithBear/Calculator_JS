@@ -1,13 +1,5 @@
 # Calculator JavaScript
 
-  - 1. For browser: Open index.html
-  ![대체 텍스트](./Sample(Web).png)
-
-  - 2. For MacOs(desktop app) -> "npm install electron"
-"npx electron ."
-  ![대체 텍스트](./Sample(App).png)
-
-
 ## Calculation Flow of the Calculator
 
 ### 1. Situations for Each Button

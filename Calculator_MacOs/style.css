@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+
+
+html {
+    width: 232px;
+    box-sizing: border-box;
+    height: 322px;
+    opacity: 0.9;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: inherit;
+    align-items: center;
+    font-family: 'Helvetica', sans-serif;
+    font-display: swap;
+    height: inherit;
+}
+
+
+
+.wrapper {
+    /* border-radius: 16px; */
+    color: #232323;
+    /* flex-basis: 400px; */
+    /* height: 540px; */
+    /* padding: 20px 35px; */
+    border: 1px solid rgba(49,45,50, 1);
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+.screen {
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    color: #232323;
+    font-size: 45px;
+    padding: 10px;
+    height: 80px;
+    font-weight: 100;
+    text-align: right;
+    background: rgba(48, 44, 50, 1);
+    color: #fff;
+}
+
+.screen>span {
+    font-size: 35px;
+}
+
+.calc_buttons {
+    
+    height: 240px;
+    overflow: hidden;
+}
+
+
+
+.calc_button_row {
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.calc_button {
+    border: none;
+    height: 49px;
+    background: rgb(99, 96, 101);
+    border-bottom: 1px solid rgba(49,45,50, 1);
+    border-left: 1px solid rgba(73,70,65, 1);
+    flex-basis: 25%;
+    font-size: 24px;
+    color: #fff;
+    font-family: inherit;
+
+}
+
+.calc_button:last-child {
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255, 0.75);
+    color: #fff;
+    background: rgb(242, 164, 60);
+    font-size: 26px;
+}
+
+.double {
+    flex-basis: 50%
+}
+
+.dark {
+    background: rgb(69, 66, 71);
+}
+
+
+.calc_button:last-child:hover {
+    /* background-color: inherit; */
+
+
+}
+
+/* .calc_button:hover {
+    background-color: inherit;
+} */
+
+.calc_button:active {
+    background-color: #888;
+}
+
+
+
+/* blink animation */
+
+.blinking {
+    animation: blink 0.15s ease-out 1;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
